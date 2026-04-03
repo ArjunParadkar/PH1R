@@ -1,0 +1,11 @@
+model: fno
+data: configs/data.yaml
+epochs: 200
+batch_size: 32
+lr: 1e-3
+device: cuda
+mixed_precision: true
+run_dir: runs/fno
+fno_modes: 16
+fno_layers: 4
+fno_channels: 16

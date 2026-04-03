@@ -1,0 +1,16 @@
+dataset_name: benchmark_operator
+n_total: 600
+train_frac: 0.8
+boundary_epsilon: 0.05
+ood_shift_factor: 1.5
+param_dim: 8
+param_low: -1.0
+param_high: 1.0
+grid_size: 128
+density_sigma: 0.02
+omega_min: -0.5
+omega_max: 0.5
+gamma_min: -0.3
+gamma_max: 0.3
+regime_weights: [0.25, 0.25, 0.25, 0.25]
+seed: 42

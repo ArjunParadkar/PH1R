@@ -1,0 +1,26 @@
+model: topo_fno
+data: configs/data.yaml
+epochs: 200
+batch_size: 32
+lr: 1e-3
+weight_decay: 1e-4
+device: cuda
+mixed_precision: true
+run_dir: runs/topo_fno
+# Same size as FNO to prevent overfitting on small datasets
+fno_modes: 16
+fno_layers: 4
+fno_channels: 16
+lambda_boundary: 1.0
+lambda_aux: 0.0
+lambda_gamma: 0.0
+boundary_delta: 0.05
+# Topology loss: small regularization (MSE dominates)
+alpha_topo: 0.05
+alpha_topo_warmup: 30
+beta_topo: 1.0
+topo_grid: 32
+# Select best checkpoint by val_mse only
+topo_val_weight: 0.0
+# Mild upweight topology loss on boundary samples
+boundary_topo_weight: 1.1

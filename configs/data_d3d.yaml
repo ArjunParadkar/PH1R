@@ -1,0 +1,11 @@
+dataset_name: d3d_real
+n_total: 200
+train_frac: 0.8
+boundary_epsilon: 0.04
+param_dim: 8
+grid_size: 128
+fs: 100000.0
+n_pts: 4096
+stft_nperseg: 256
+ood_shift_factor: 1.2
+seed: 43

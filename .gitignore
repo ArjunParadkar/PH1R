@@ -1,0 +1,8 @@
+runs/
+data/
+__pycache__/
+*.pyc
+*.pt
+.venv/
+venv/
+PRISM_Board.png

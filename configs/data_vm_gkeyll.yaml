@@ -1,0 +1,14 @@
+dataset_name: vlasov_maxwell_gkeyll
+n_total: 30
+train_frac: 0.8
+boundary_epsilon: 0.05
+param_dim: 4
+grid_size: 128
+density_sigma: 0.02
+omega_min: -0.5
+omega_max: 0.5
+gamma_min: -0.3
+gamma_max: 0.3
+gkeyll_precomputed_dir: null
+spectral_window_frac: 0.3
+seed: 42

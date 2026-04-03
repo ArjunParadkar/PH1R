@@ -1,0 +1,29 @@
+{
+  "dataset": "d3d_real",
+  "n_steps": 60,
+  "dt_ms": 2.0,
+  "solver_ms": 10.293195349970574,
+  "topo_fno_inference_ms_mean": 1.113224683331282,
+  "speedup": 9.246287388426012,
+  "gamma_init": 0.03306276789888389,
+  "gamma_final": {
+    "none": 0.052673185468966696,
+    "proportional": 0.009806780184538464,
+    "mpc": 0.00783090658639889
+  },
+  "stabilised": {
+    "none": false,
+    "proportional": false,
+    "mpc": false
+  },
+  "figures": [
+    "results/figures/control/ctrl_01_*.png",
+    "results/figures/control/ctrl_02_*.png",
+    "results/figures/control/ctrl_03_*.png",
+    "results/figures/control/ctrl_04_*.png",
+    "results/figures/control/ctrl_05_*.png",
+    "results/figures/control/ctrl_06_*.png",
+    "results/figures/control/ctrl_07_*.png",
+    "results/figures/control/ctrl_08_*.png"
+  ]
+}

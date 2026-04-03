@@ -1,0 +1,5 @@
+data: configs/data.yaml
+runs: runs
+n_warmup: 5
+n_samples: 50
+batch_sizes: [1, 32]

@@ -1,0 +1,10 @@
+dataset_name: fusion_real_lhd
+n_total: 100
+train_frac: 0.8
+boundary_epsilon: 0.1
+param_dim: 6
+grid_size: 128
+lhd_subset: curated_10
+stft_nperseg: 256
+transition_percentile: 50
+seed: 42
