@@ -7,6 +7,17 @@ Topology-Aware Physics-Constrained Operator Learning of Eigenmode Instability Sp
 - **Full Vlasov–Maxwell spectra** are generated using Gkeyll VM simulations and extracted into (ω, γ) mode spectra for training and evaluation (synthetic mode amplitudes when Gkeyll is not installed).
 - **Real experimental fusion validation** uses LHD open diagnostic signals (NIFS LHD Open Data on AWS), converted into spectral density images via STFT.
 
+## Run it
+
+```bash
+pip3 install -r requirements.txt
+python3 run_full_evaluation.py      # data (generated if missing) -> trains the 5 models -> results/figures/ (7 PNGs) + results/tables/ (3 CSVs)
+```
+
+You should see per-dataset training logs and then `results/figures/06_model_comparison_heatmap.png` /
+`07_wasserstein_barchart.png` with the TOPO-FNO vs FNO / CNN / MLP comparison. Demo walkthrough:
+[`demo/prism_ad_demo.mp4`](demo/prism_ad_demo.mp4) · poster: [`docs/PRISM_poster.png`](docs/PRISM_poster.png).
+
 **What you need:** Python 3.8+ with `numpy`, `scipy`, `torch`, `PyYAML`, `matplotlib`. Optional: `gudhi`, `persim` for true Wasserstein topology; eigenvalue solver is a surrogate to benchmark iterative eigensolver runtime vs neural inference.
 
 **One command to get all graphs and tables (recommended):**
